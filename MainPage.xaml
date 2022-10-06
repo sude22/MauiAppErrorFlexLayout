@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppErrorFlexLayout.MainPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <ScrollView>
+            <FlexLayout Direction="Column" Wrap="Wrap">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Button Text="B1" HeightRequest="100" WidthRequest="50" />
+                    <Label Grid.Column="1" Text="Foo" VerticalTextAlignment="Center"/>
+                    <Button Grid.Row="1" Text="B2" HeightRequest="100" WidthRequest="50" />
+                    <Label Grid.Column="1" Grid.Row="1" Text="Ba" VerticalTextAlignment="Center"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Button Text="B1" HeightRequest="100" WidthRequest="50" />
+                    <Label Grid.Column="1" Text="Foo" VerticalTextAlignment="Center"/>
+                    <Button Grid.Row="1" Text="B2" HeightRequest="100" WidthRequest="50" />
+                    <Label Grid.Column="1" Grid.Row="1" Text="Ba" VerticalTextAlignment="Center"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Button Text="B1" HeightRequest="100" WidthRequest="50" />
+                    <Label Grid.Column="1" Text="Foo" VerticalTextAlignment="Center"/>
+                    <Button Grid.Row="1" Text="B2" HeightRequest="100" WidthRequest="50" />
+                    <Label Grid.Column="1" Grid.Row="1" Text="Ba" VerticalTextAlignment="Center"/>
+                </Grid>
+            </FlexLayout>
+        </ScrollView>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="0.5*" />
+            </Grid.ColumnDefinitions>
+            <Grid></Grid>
+            <Label Text="Text" />
+            <Label Grid.Column="1" Text="Text" />
+        </Grid>
+    </Grid>
+</ContentPage>
